@@ -51,6 +51,7 @@ const App = () => {
     }, [searchValue]);
 
     return (
+
         <div className='container-fluid'>
             {/* Header with SearchBox */}
             <Header searchValue={searchValue} setSearchValue={setSearchValue} />
@@ -59,6 +60,7 @@ const App = () => {
             <div className='row'>
                 <MovieList movies={movies} />
             </div>
+            <Footer/>
         </div>
     );
 };
