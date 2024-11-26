@@ -4,6 +4,8 @@ import MovieList from './MovieList';
 import Header from './Header';
 import './App.css';
 import Footer from './components/Footer'
+import Footer from './components/Footer'
+
 
 const App = () => {
     const [movies, setMovies] = useState([]);
@@ -50,6 +52,7 @@ const App = () => {
     }, [searchValue]);
 
     return (
+
         <div className='container-fluid'>
             {/* Header with SearchBox */}
             <Header searchValue={searchValue} setSearchValue={setSearchValue} />
@@ -58,7 +61,6 @@ const App = () => {
             <div className='row'>
                 <MovieList movies={movies} />
             </div>
-
             <Footer/>
         </div>
     );
