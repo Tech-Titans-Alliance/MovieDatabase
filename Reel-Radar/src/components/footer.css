@@ -1,0 +1,40 @@
+/* footer.css */
+
+/* Footer Styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgb(119, 0, 0); /* Red background */
+    color: black; /* White text */
+    z-index: 10;
+}
+
+/* Circular Links Section */
+.footer .circle-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.footer .circle-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(201, 71, 71); /* White background */
+    border-radius: 50%; /* Circular shape */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer .circle-links a div {
+    color: white; /* Red text color */
+    font-weight: bold;
+    font-size: 20px;
+}
