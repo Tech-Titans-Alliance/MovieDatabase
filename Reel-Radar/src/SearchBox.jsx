@@ -1,5 +1,5 @@
 import React from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 const SearchBox = (props)=>{
     return(
         <div className="col col-sm-4">
@@ -9,6 +9,7 @@ const SearchBox = (props)=>{
              placeholder="type to search...">
             </input>
         </div>
+
     )
 }
 

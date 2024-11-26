@@ -33,10 +33,13 @@ const App=()=> {
      
     <div className='container-fluid'>
        
-      <div className='row d-flex align-items-center mt-4 mb-4'>
+      {/* <div className='row d-flex align-items-center mt-4 mb-4'>
         <Header/>
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
-      </div>
+        <Header/>
+      </div> */}
+
+      <Header searchValue={searchValue} setSearchValue={setSearchValue} />
       
      <div className='row'>
       <MovieList movies={movies}/>
