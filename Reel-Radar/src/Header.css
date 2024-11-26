@@ -1,0 +1,67 @@
+/* General Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
+    background-color: #007bff; /* Matches the current blue */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}  
+
+/* Styling for the search bar */
+.search-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for search input */
+.search-input {
+    border-radius: 30px; /* Rounded corners */
+    padding-left: 20px; /* Padding for the search text */
+    font-size: 16px; /* Adjust font size */
+    border: 1px solid #ccc;
+    max-width: 600px; /* Limit max width */
+    margin: 0 auto; /* Center the input */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navbar link styling */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    padding: 10px 20px;
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Toggler Button Styling (for mobile) */
+.navbar-toggler {
+    border-color: #fff;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .search-input {
+        max-width: 100%; /* Make search input fill width on smaller screens */
+    }
+}
