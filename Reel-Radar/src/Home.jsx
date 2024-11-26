@@ -16,7 +16,7 @@ fetch(apiUrl)
       // Loop through the results and display them
       for (let i = 0; i < movies.length; i++) {
         <div>
-            
+
         </div>
         console.log(`Title: ${movies[i].Title}`);
         console.log(`Year: ${movies[i].Year}`);
