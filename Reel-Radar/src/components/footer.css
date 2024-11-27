@@ -7,10 +7,11 @@
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 20px;
-    background: rgb(119, 0, 0); /* Red background */
-    color: black; /* White text */
+    
+    background: rgba(119, 0, 0, 0.774); /* Red background */
+    color: rgb(255, 255, 255); /* White text */
     z-index: 10;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Circular Links Section */
@@ -19,7 +20,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .footer .circle-links a {
@@ -28,7 +29,7 @@
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: rgb(201, 71, 71); /* White background */
+    background-color: rgb(150, 61, 61); /* White background */
     border-radius: 50%; /* Circular shape */
     text-decoration: none; /* Remove underline from links */
 }
@@ -37,4 +38,9 @@
     color: white; /* Red text color */
     font-weight: bold;
     font-size: 20px;
+}
+.footer .circle-links a div:hover {
+    color: black !important;
+    text-shadow: 0 0 12px rgb(255, 151, 151);
+    transform: scale(1.1);
 }
