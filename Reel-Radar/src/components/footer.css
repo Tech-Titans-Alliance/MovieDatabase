@@ -1,46 +1,82 @@
 /* footer.css */
-
-/* Footer Styling */
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    
-    background: rgba(119, 0, 0, 0.774); /* Red background */
-    color: rgb(255, 255, 255); /* White text */
-    z-index: 10;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Circular Links Section */
-.footer .circle-links {
+#footer {
+    background: rgb(119, 0, 0, 0.774);
+    padding: 10px 0; /* Reduced padding to make the footer smaller */
+    height: auto; /* Let the content determine the height */
+    min-height: 60px; /* Set a smaller minimum height for the footer */
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding-top: 5px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.footer .circle-links a {
+/* Footer container */
+#footer .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    background-color: rgb(150, 61, 61); /* White background */
-    border-radius: 50%; /* Circular shape */
-    text-decoration: none; /* Remove underline from links */
+    justify-content: center;
 }
 
-.footer .circle-links a div {
-    color: white; /* Red text color */
+/* Brand */
+#footer .brand h1 {
+    color: white;
+    font-size: 1.5rem; /* Smaller font size for the brand name */
     font-weight: bold;
-    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 5px 0; /* Reduced margin */
 }
-.footer .circle-links a div:hover {
-    color: black !important;
-    text-shadow: 0 0 12px rgb(255, 151, 151);
-    transform: scale(1.1);
+
+#footer .brand h1 span {
+    color: black;
+}
+
+/* "Get in Touch" Heading */
+#footer h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem; /* Reduced font size */
+    letter-spacing: 0.05rem;
+    margin: 5px 0; /* Reduced margin */
+}
+
+/* Social Icons */
+#footer .social-icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0; /* Removed margin to eliminate space between social icons and copyright */
+}
+
+#footer .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px; /* Reduced spacing between items */
+    text-align: center;
+}
+
+#footer .social-item img {
+    height: 40px; /* Smaller icon size */
+    width: 40px;
+    filter: grayscale(1);
+    transition: 0.3s ease filter;
+}
+
+#footer .social-item:hover img {
+    filter: grayscale(0);
+}
+
+#footer .social-item p {
+    color: white;
+    font-size: 0.8rem; /* Smaller font size for names */
+    margin-top: 5px; /* Reduced margin above names */
+}
+
+/* Copyright */
+#footer p {
+    color: white;
+    font-size: 0.8rem; /* Smaller footer text */
+    margin-top: 0; /* Removed margin to reduce space */
 }
