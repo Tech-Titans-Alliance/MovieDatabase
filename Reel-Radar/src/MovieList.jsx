@@ -9,7 +9,7 @@ const MovieList = (props) => {
     return (
         <div className="row-container">
             <div className="row">
-            {props.movies.map((movie, index) => (
+            {props.movies?.map((movie, index) => (
                 <div className="col-sm-3 mb-4 " key={index}>
                     <div className="card h-100">
                         <img
