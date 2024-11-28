@@ -6,7 +6,8 @@ const MovieList = (props) => {
     const FavouriteComponent = props.favouriteComponent;
 
     return (
-        <div className="row">
+        <div className="row-container">
+            <div className="row">
             {props.movies?.map((movie, index) => (
                 <div
                     className="col-sm-3 mb-4"
@@ -38,6 +39,7 @@ const MovieList = (props) => {
                     </div>
                 </div>
             ))}
+        </div>
         </div>
     );
 };
