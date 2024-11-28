@@ -96,8 +96,6 @@ const App = () => {
             <div className='row'>
                 <MovieList movies={favourites} handleFavouritesClick={removeFavouriteMovie} favouriteComponent={RemoveFavourites} />
             </div>
-
-            {/* Footer with Links */}
             <Footer/>
         </div>
         
