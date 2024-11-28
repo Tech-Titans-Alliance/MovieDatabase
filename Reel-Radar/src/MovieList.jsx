@@ -2,7 +2,10 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './MovieList.css';
+
+
 const MovieList = (props) => {
+    const FavouriteComponent =props.favouriteComponent;
     return (
         <div className="row">
             {props.movies.map((movie, index) => (
@@ -18,11 +21,18 @@ const MovieList = (props) => {
                         <div className="card-body">
                             <h5 className="card-title">{movie.Title}</h5>
                             <p className="card-text">Year: {movie.Year}</p>
+                            <p className="card-text">Indormation: {movie.imdbID}</p>
+                            <div onClick={()=>props.handleFavouritesClick(movie)} style={{ position: "absolute", bottom: "10px", right: "10px" }}>
+                                <FavouriteComponent />
+                            </div>
+
                         </div>
                         </div>
                     </div>
                 </div>
             ))}
+
+            
         </div>
     );
 };

@@ -1,11 +1,17 @@
+//Don't change anything in the app file without communicating to Xolani
+
+
 import { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import MovieList from './MovieList';
 import Header from './Header';
 import './App.css';
 import Footer from './components/Footer'
+import AddFavourite from './Favourites';
+import RemoveFavourites from './RemoveFavourites';
 const App = () => {
     const [movies, setMovies] = useState([]);
+    const [favourites, setFavourites] = useState([]);
     const [searchValue, setSearchValue] = useState('');
 
     const GetMovieRequest = async (searchValue) => {
@@ -27,6 +33,7 @@ const App = () => {
     
           if (responseJson.Search) {
             setMovies(responseJson.Search);
+            console.log(responseJson.Search)
           } else {
             // Default to fetching latest movies if no search results
             const latestUrl = `http://www.omdbapi.com/?s=Teen Titans&apikey=c7301b93`;
@@ -48,6 +55,29 @@ const App = () => {
         GetMovieRequest(searchValue);
     }, [searchValue]);
 
+    useEffect(() => {
+      const movieFavourites = JSON.parse(localStorage.getItem('localfavourites'))
+      setFavourites(movieFavourites);
+    }, []);
+
+    const saveToLocalStorage= (items)=>{
+      localStorage.setItem('localfavourites',JSON.stringify(items))
+      
+    }
+
+    //add to favourites 
+    const addFavouriteMovie=(movie)=>{
+      const newFavouriteList = [...favourites,movie]
+      setFavourites(newFavouriteList);
+      saveToLocalStorage(newFavouriteList);
+    }
+
+    const removeFavouriteMovie= (movie)=>{
+      const newFavouriteList=favourites.filter((favourite)=>favourite.imdbID !== movie.imdbID);
+      setFavourites(newFavouriteList);
+      saveToLocalStorage(newFavouriteList);
+    }
+
     return (
 
         <div className='container-fluid'>
@@ -56,7 +86,15 @@ const App = () => {
             
             {/* Movie List */}
             <div className='row'>
-                <MovieList movies={movies} />
+                <MovieList movies={movies} handleFavouritesClick={addFavouriteMovie} favouriteComponent={AddFavourite} />
+            </div>
+
+            {/* the favourites  */}
+            <div className='row d-flex align-items-center mt-4 mb-2'>
+              <h1>Favourites</h1>
+            </div>
+            <div className='row'>
+                <MovieList movies={favourites} handleFavouritesClick={removeFavouriteMovie} favouriteComponent={RemoveFavourites} />
             </div>
             <Footer/>
         </div>
