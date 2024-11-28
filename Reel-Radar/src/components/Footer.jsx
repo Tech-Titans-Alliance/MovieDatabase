@@ -5,10 +5,10 @@ const Footer = () => {
     // Team members and their GitHub profiles
     const team = [
         { name: "R.M", link: "https://github.com/RolivhuwaMuzila" },
-        { name: "A.S", link: "https://github.com/AtlehangSemela" },
-        { name: "A.M", link: "https://github.com/AsandaMthimande" },
-        { name: "X.V", link: "https://github.com/XolaniVilakazi" },
-        { name: "P.M", link: "https://github.com/PalesaMashabela" },
+        { name: "A.S", link: "https://github.com/Atlehang66" },
+        { name: "A.M", link: "https://github.com/Asandan8106" },
+        { name: "X.V", link: "https://github.com/Xolanisyav04" },
+        { name: "P.M", link: "https://github.com/Pali-pali" },
     ];
 
     return (
