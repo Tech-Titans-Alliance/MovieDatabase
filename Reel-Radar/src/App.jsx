@@ -67,9 +67,10 @@ const App = () => {
 
     //add to favourites 
     const addFavouriteMovie=(movie)=>{
-      const newFavouriteList = [...favourites,movie]
+      const newFavouriteList = [...favourites|| [],movie]
       setFavourites(newFavouriteList);
       saveToLocalStorage(newFavouriteList);
+      console.log(newFavouriteList)
     }
 
     const removeFavouriteMovie= (movie)=>{
