@@ -58,6 +58,8 @@ const App = () => {
             <div className='row'>
                 <MovieList movies={movies} />
             </div>
+
+            {/* Footer with Links */}
             <Footer/>
         </div>
         
