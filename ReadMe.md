@@ -61,6 +61,9 @@ Check out Reel Radar live at:
 Reel Radar Deployment
 (🔗 https://moviedatabase-u1gk.onrender.com/)
 
+## For movie description(the deployed version does not show it)
+https://drive.google.com/file/d/1HkmYIsrQDMVra_fDLDwGrpyhEDd4f_42/view?usp=drive_link
+
 ## **🛠️ Future Enhancements
 👤 User Authentication: Allow users to create accounts and save their favourites persistently.
 
