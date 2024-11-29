@@ -23,9 +23,9 @@ const MovieList = (props) => {
                             style={{ height: "300px", objectFit: "cover" }}
                         />
                         <div className="card-body">
-                            <h5 className="card-title">{movie.Title}</h5>
+                            {/* <h5 className="card-title">{movie.Title}</h5>
                             <p className="card-text">Year: {movie.Year}</p>
-                            <p className="card-text">Information: {movie.imdbID}</p>
+                            <p className="card-text">Information: {movie.imdbID}</p> */}
                             <div
                                 onClick={(e) => {
                                     e.stopPropagation(); // Prevent event bubbling
