@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
-import "./header.css";
+import "./Header.css";
 import "./intro.css"; // Add the intro-specific CSS
 
 const Header = ({ searchValue, setSearchValue, setCurrentSection }) => {
