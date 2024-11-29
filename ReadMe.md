@@ -59,7 +59,7 @@ Follow these steps to set up and run Reel Radar locally:
 ## **🌐 Deployment
 Check out Reel Radar live at:
 Reel Radar Deployment
-(🔗 Add your deployment link here.)
+(🔗 https://moviedatabase-u1gk.onrender.com/)
 
 ## **🛠️ Future Enhancements
 👤 User Authentication: Allow users to create accounts and save their favourites persistently.
