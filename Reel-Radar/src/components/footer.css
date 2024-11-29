@@ -1,0 +1,63 @@
+/* footer.css */
+
+/* Footer Styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(119, 0, 0, 0.774); /* Red background */
+    color: rgb(255, 255, 255); /* White text */
+    z-index: 10;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Circular Links Section */
+.footer .circle-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5px;
+}
+
+.footer .circle-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(150, 61, 61); /* Background color */
+    border-radius: 50%; /* Circular shape */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid transparent; /* Initial border */
+    animation: border-flash 1s infinite; /* Flashing animation */
+}
+
+@keyframes border-flash {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+.footer .circle-links a div {
+    color: white; /* Red text color */
+    font-weight: bold;
+    font-size: 10px;
+}
+.footer .circle-links a div:hover {
+    color: black !important;
+    text-shadow: 0 0 12px rgb(255, 151, 151);
+    transform: scale(1.1);
+}
+p{
+    margin-bottom: 0px;
+    font-size: small;
+}

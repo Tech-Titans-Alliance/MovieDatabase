@@ -1,0 +1,25 @@
+.add-favourite {
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Make the component clickable */
+    transition: all 0.3s ease-in-out;
+}
+
+.favourite-text {
+    font-size: 16px;
+    color: black;
+    margin-right: 8px; /* Space between text and heart icon */
+    transition: color 0.3s ease-in-out;
+}
+
+.bi-heart-fill {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.add-favourite:hover .favourite-text {
+    color: darkred; /* Change text color on hover */
+}
+
+.add-favourite:hover .bi-heart-fill {
+    transform: scale(1.2); /* Slightly enlarge the heart on hover */
+}

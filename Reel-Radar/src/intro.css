@@ -1,0 +1,47 @@
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: black;
+    overflow: hidden;
+    text-shadow: 0 0 12px rgb(119, 0, 0);
+  }
+  
+  .intro-content {
+    text-align: center;
+    animation: fadeOut 5s ease-out forwards;
+  }
+  .intro-title:hover{
+    color: black !important;
+    text-shadow: 0 0 12px rgba(255, 204, 0, 1);
+    transform: scale(1.1);
+}
+  .intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-logo {
+    width: 100px;
+    height: 100px;
+    background: url("your-logo.png") no-repeat center center;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
