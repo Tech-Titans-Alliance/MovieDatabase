@@ -15,7 +15,7 @@ const App = () => {
   const [currentSection, setCurrentSection] = useState("home"); // Track current section (home or favorites)
 
   const GetMovieRequest = async (searchValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=c7301b93`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=c7301b93`;
     try {
       const response = await fetch(url);
       const responseJson = await response.json();
@@ -23,7 +23,7 @@ const App = () => {
       if (responseJson.Search) {
         setMovies(responseJson.Search);
       } else {
-        const latestUrl = `http://www.omdbapi.com/?s=Teen Titans&apikey=c7301b93`;
+        const latestUrl = `https://www.omdbapi.com/?s=Teen Titans&apikey=c7301b93`;
         const latestResponse = await fetch(latestUrl);
         const latestResponseJson = await latestResponse.json();
         if (latestResponseJson.Search) {
